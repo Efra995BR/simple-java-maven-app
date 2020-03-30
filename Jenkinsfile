@@ -24,6 +24,12 @@ pipeline {
                 }
             }
         }
-        
+
+        stage('Entrega') {
+            steps{
+                sh './jenkins/scripts/deliver.sh'
+            }
+        }
+
     }
 }
